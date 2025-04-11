@@ -1,0 +1,770 @@
+/* Temel değişkenler: Renk paleti ve genişlik */
+:root {
+  --birincil-renk: #d40707; /* Koyu mor */
+  --birincil-renk-koyu: #020410; /* Daha koyu mor */
+  --metin-koyu: #1a1a1a;
+  --metin-acik: #6c757d;
+  --ekstra-acik: #f8f9fa;
+  --beyaz: #ffffff;
+  --maks-genislik: 1300px;
+  --golge: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --hover-renk: #ff0000; /* Hover rengi koyu mor */
+}
+
+/* Genel sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ana kapsayıcı: İçeriği merkezler */
+.bolum__kapsayici {
+  max-width: var(--maks-genislik);
+  margin: auto;
+  padding: 6rem 1.5rem;
+}
+
+/* Bölüm başlığı: Büyük ve dikkat çekici */
+.bolum__baslik {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--metin-koku);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Bölüm açıklaması: Hafif ve bilgilendirici */
+.bolum__aciklama {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: var(--metin-acik);
+  line-height: 1.8;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Düğme: Modern ve etkileşimli */
+.dugme {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--beyaz);
+  background-color: var(--birincil-renk);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dugme:hover {
+  background-color: var(--birincil-renk-koyu);
+  transform: translateY(-3px);
+}
+
+/* Logo: Marka için güçlü bir görünüm */
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--metin-koku);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Resimler: Esnek ve optimize */
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Bağlantılar: Temiz ve geçişli */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Listeler: Varsayılan stil kaldırıldı */
+ul {
+  list-style: none;
+}
+
+/* Genel sayfa ayarları */
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigasyon: Sabit ve şık bir üst çubuk */
+.navigasyon {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--beyaz);
+  box-shadow: var(--golge);
+  z-index: 1000;
+}
+
+.nav__baslik {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--birincil-renk);
+}
+
+.nav__logo .logo {
+  font-size: 1.8rem;
+  color: var(--beyaz);
+}
+
+.nav__menu__dugme {
+  font-size: 1.8rem;
+  color: var(--beyaz);
+  cursor: pointer;
+}
+
+.nav__baglantilar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--birincil-renk);
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav__baglantilar.acik {
+  transform: translateY(0);
+}
+
+.nav__baglantilar a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--beyaz);
+}
+
+.nav__baglantilar a:hover {
+  color: var(--hover-renk);
+}
+
+.nav__dugmeler {
+  display: none;
+}
+
+/* Başlık: Yeni arka plan fotoğrafı ve bordürsüz uçak */
+.baslik {
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2070&auto=format&fit=crop")
+    no-repeat center center/cover; /* Yeni arka plan fotoğrafı */
+  padding: 4rem 0;
+}
+
+.baslik__kapsayici {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+}
+
+.baslik__icerik {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.baslik__icerik p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--beyaz); /* Fotoğrafta okunabilirlik için beyaz */
+  margin-bottom: 1.5rem;
+}
+
+.baslik__icerik h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--beyaz); /* Fotoğrafta okunabilirlik için beyaz */
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+.baslik__dugmeler {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.baslik__dugmeler .dugme {
+  padding: 1.2rem 3rem;
+}
+
+.baslik__dugmeler a {
+  padding: 1rem;
+  font-size: 2rem;
+  color: var(--birincil-renk);
+  background-color: var(--beyaz);
+  border-radius: 50%;
+}
+
+.baslik__dugmeler a:hover {
+  color: var(--beyaz);
+  background-color: var(--birincil-renk);
+}
+
+.baslik__resim img {
+  max-width: 800px;
+  margin: auto;
+  /* Bordür ve gölge kaldırıldı */
+}
+
+/* Uçak Deneyimi: Ekonomi ve Business */
+.ucak__deneyimi .bolum__baslik,
+.ucak__deneyimi .bolum__aciklama {
+  text-align: center;
+}
+
+.ucak__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.ucak__kart {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--golge);
+  transition: transform 0.4s ease;
+}
+
+.ucak__kart:hover {
+  transform: translateY(-10px);
+}
+
+.ucak__kart img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.ucak__kart__detaylar {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.ucak__kart__detaylar h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+}
+
+/* Oteller: Konaklama Seçenekleri */
+.oteller .bolum__baslik,
+.oteller .bolum__aciklama {
+  text-align: center;
+}
+
+.oteller__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.oteller__kart {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--golge);
+  transition: transform 0.4s ease;
+}
+
+.oteller__kart:hover {
+  transform: translateY(-10px);
+}
+
+.oteller__kart img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.oteller__kart__detaylar {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.oteller__kart__detaylar h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+}
+
+/* Destinasyonlar: Popüler yerleri sergiler */
+.destinasyon__kapsayici .bolum__baslik,
+.destinasyon__kapsayici .bolum__aciklama {
+  text-align: left;
+}
+
+.destinasyon__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.destinasyon__kart {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--golge);
+  transition: transform 0.4s ease;
+}
+
+.destinasyon__kart:hover {
+  transform: translateY(-10px);
+}
+
+.destinasyon__kart img {
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.destinasyon__kart__detaylar {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destinasyon__kart__detaylar h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+}
+
+.destinasyon__kart__detaylar p {
+  color: var(--metin-acik);
+}
+
+.destinasyon__puan {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: var(--beyaz);
+  background-color: var(--birincil-renk);
+  border-radius: 1rem;
+}
+
+/* Seyahat: Hizmetleri tanıtır */
+.seyahat__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.seyahat__kart {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--golge);
+}
+
+.seyahat__kart__arka {
+  padding: 2rem;
+  background-color: var(--ekstra-acik);
+}
+
+.seyahat__kart__arka span {
+  font-size: 2.5rem;
+  color: var(--birincil-renk);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.seyahat__kart__arka h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.seyahat__kart__icerik {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--birincil-renk);
+  color: var(--beyaz);
+  transition: top 0.4s ease;
+}
+
+.seyahat__kart:hover .seyahat__kart__icerik {
+  top: 0;
+}
+
+.seyahat__kart__icerik span {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.seyahat__kart__icerik h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.seyahat__kart__icerik p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Vitrin: Markayı öne çıkarır */
+.vitrin__kapsayici {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.vitrin__resim img {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 1.5rem;
+  box-shadow: var(--golge);
+}
+
+.vitrin__icerik h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--metin-koku);
+  margin-bottom: 2rem;
+}
+
+.vitrin__icerik p {
+  font-size: 1.2rem;
+  color: var(--metin-acik);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.vitrin__icerik .dugme {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  background: linear-gradient(
+    135deg,
+    var(--birincil-renk),
+    var(--birincil-renk-koyu)
+  );
+}
+
+/* Banner: İstatistikleri sergiler */
+.banner__kapsayici {
+  display: grid;
+  gap: 2rem;
+}
+
+.banner__kart {
+  padding: 2.5rem;
+  text-align: center;
+  background-color: var(--ekstra-acik);
+  border-radius: 2rem;
+  box-shadow: var(--golge);
+  transition: transform 0.4s ease;
+}
+
+.banner__kart:hover {
+  transform: translateY(-8px);
+}
+
+.banner__kart h4 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--birincil-renk);
+}
+
+.banner__kart p {
+  font-size: 1.2rem;
+  color: var(--metin-acik);
+}
+
+/* Keşfet: Seyahat deneyimlerini tanıtır */
+.kesfet__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.kesfet__kart {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  box-shadow: var(--golge);
+  transition: transform 0.4s ease;
+}
+
+.kesfet__kart:hover {
+  transform: translateY(-8px);
+}
+
+.kesfet__kart span {
+  font-size: 2.5rem;
+  color: var(--birincil-renk);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.kesfet__kart h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+  margin-bottom: 1rem;
+}
+
+.kesfet__kart p {
+  font-size: 1.1rem;
+  color: var(--metin-acik);
+}
+
+/* Müşteri: Kullanıcı yorumlarını gösterir */
+.musteri__kapsayici .swiper {
+  margin-top: 4rem;
+}
+
+.musteri__kart {
+  padding: 1rem;
+  background-color: var(--ekstra-acik);
+  border-radius: 1.5rem;
+  transition: background-color 0.4s ease;
+}
+
+.musteri__kart:hover {
+  background-color: var(--hover-renk);
+}
+
+.musteri__icerik {
+  padding: 2rem;
+  background-color: var(--beyaz);
+  border-radius: 1rem;
+}
+
+.musteri__puan {
+  color: var(--birincil-renk);
+  margin-bottom: 1.5rem;
+}
+
+.musteri__icerik p {
+  font-size: 1.1rem;
+  color: var(--metin-koku);
+  line-height: 1.8;
+}
+
+.musteri__detaylar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.musteri__detaylar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.musteri__detaylar h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+}
+
+.musteri__kart:hover h4,
+.musteri__kart:hover h5 {
+  color: var(--beyaz);
+}
+
+.musteri__detaylar h5 {
+  font-size: 1rem;
+  color: var(--metin-acik);
+}
+
+/* Altbilgi: İletişim ve hızlı bağlantılar */
+.altbilgi {
+  background-color: var(--ekstra-acik);
+  padding: 4rem 1rem;
+}
+
+.altbilgi__kapsayici {
+  display: grid;
+  gap: 4rem;
+}
+
+.altbilgi__logo .logo {
+  font-size: 2.2rem;
+}
+
+.altbilgi__col p {
+  max-width: 400px;
+  margin: 2rem 0;
+  color: var(--metin-acik);
+  line-height: 1.8;
+}
+
+.altbilgi__sosyaller {
+  display: flex;
+  gap: 1rem;
+}
+
+.altbilgi__sosyaller a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--beyaz);
+  background-color: var(--birincil-renk);
+  border-radius: 50%;
+}
+
+.altbilgi__sosyaller a:hover {
+  background-color: var(--birincil-renk-koyu);
+}
+
+.altbilgi__col h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--metin-koku);
+}
+
+.altbilgi__baglantilar {
+  display: grid;
+  gap: 1rem;
+}
+
+.altbilgi__baglantilar a {
+  color: var(--metin-acik);
+  font-size: 1.1rem;
+}
+
+.altbilgi__baglantilar a:hover {
+  color: var(--birincil-renk);
+}
+
+.altbilgi__col form {
+  display: grid;
+  gap: 1rem;
+}
+
+.altbilgi__col input {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 1px solid var(--metin-acik);
+  border-radius: 10px;
+  background-color: var(--beyaz);
+}
+
+.altbilgi__col input::placeholder {
+  color: var(--metin-acik);
+}
+
+.altbilgi__bar {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--metin-acik);
+  border-top: 1px solid var(--metin-acik);
+}
+
+/* Responsive tasarım */
+@media (min-width: 540px) {
+  .destinasyon__grid,
+  .seyahat__grid,
+  .banner__kapsayici,
+  .kesfet__grid,
+  .ucak__grid,
+  .oteller__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vitrin__kapsayici {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigasyon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: var(--beyaz);
+  }
+
+  .nav__baslik {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav__logo .logo {
+    color: var(--metin-koku);
+  }
+
+  .nav__menu__dugme {
+    display: none;
+  }
+
+  .nav__baglantilar {
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .nav__baglantilar a {
+    color: var(--metin-koku);
+  }
+
+  .nav__baglantilar a:hover {
+    color: var(--hover-renk);
+  }
+
+  .nav__dugmeler {
+    display: block;
+  }
+
+  .baslik__kapsayici {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .baslik__icerik {
+    text-align: left;
+    padding: 5rem;
+  }
+
+  .baslik__dugmeler {
+    justify-content: flex-start;
+  }
+
+  .destinasyon__grid,
+  .seyahat__grid,
+  .kesfet__grid,
+  .ucak__grid,
+  .oteller__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .altbilgi__kapsayici {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .baslik__icerik h1 {
+    font-size: 6rem;
+  }
+
+  .vitrin__icerik h4 {
+    font-size: 3.5rem;
+  }
+
+  .baslik__resim img {
+    max-width: 1000px;
+  }
+}

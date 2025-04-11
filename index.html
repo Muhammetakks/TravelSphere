@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SkyVibe | Seyahatin Yeni Ritmi</title>
+  </head>
+  <body>
+    <!-- Navigasyon: Sabit üst menü, logo ve bağlantılar -->
+    <nav class="navigasyon">
+      <div class="nav__baslik">
+        <div class="nav__logo">
+          <a href="#" class="logo">SkyVibe</a>
+        </div>
+        <div class="nav__menu__dugme" id="menu-dugme">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__baglantilar" id="nav-baglanti">
+        <li><a href="#anasayfa">ANASAYFA</a></li>
+        <li><a href="#hakkimizda">HAKKIMIZDA</a></li>
+        <li><a href="#turlar">TURLAR</a></li>
+        <li><a href="#paketler">PAKETLER</a></li>
+        <li><a href="#iletisim">İLETİŞİM</a></li>
+        <li><a href="#konaklama">KONAKLAMA SEÇENEKLERİ</a></li>
+        <li><a href="#ucak">UÇAK DENEYİMİ</a></li>
+      </ul>
+      <div class="nav__dugmeler">
+        <button class="dugme">Rezervasyon Yap</button>
+      </div>
+    </nav>
+
+    <!-- Başlık: Kullanıcıyı etkileyen giriş bölümü -->
+    <header class="baslik" id="anasayfa">
+      <div class="bolum__kapsayici baslik__kapsayici">
+        <div class="baslik__icerik">
+          <p>SEYAHAT DENEYİMİNİ YÜKSELT</p>
+          <h1>Uçuşun Ritmini Hisset!</h1>
+          <div class="baslik__dugmeler">
+            <button class="dugme">Hemen Rezervasyon Yap</button>
+            <a href="#"><i class="ri-play-circle-fill"></i></a>
+          </div>
+        </div>
+        <div class="baslik__resim">
+          <img src="img/header-3.png" alt="seyahat-resmi" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Uçak Deneyimi: Ekonomi ve Business -->
+    <section class="bolum__kapsayici ucak__deneyimi" id="ucak">
+      <h2 class="bolum__baslik">Uçak Deneyimi</h2>
+      <p class="bolum__aciklama">Konforlu yolculuk seçeneklerimizi keşfet</p>
+      <div class="ucak__grid">
+        <div class="ucak__kart">
+          <img
+            src="https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?q=80&w=2070&auto=format&fit=crop"
+            alt="ekonomi-1"
+          />
+          <div class="ucak__kart__detaylar">
+            <h4>Ekonomi Sınıfı - Standart</h4>
+          </div>
+        </div>
+        <div class="ucak__kart">
+          <img src="img/jc-gellidon-1g3qVp7ynX4-unsplash.jpg" alt="ekonomi-2" />
+          <div class="ucak__kart__detaylar">
+            <h4>Ekonomi Sınıfı - Premium</h4>
+          </div>
+        </div>
+        <div class="ucak__kart">
+          <img
+            src="img/alessandro-porri-zts73o4Yn9E-unsplash.jpg"
+            alt="business"
+          />
+          <div class="ucak__kart__detaylar">
+            <h4>Business Sınıfı</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Oteller: Konaklama Seçenekleri -->
+    <section class="bolum__kapsayici oteller" id="konaklama">
+      <h2 class="bolum__baslik">Konaklama Seçenekleri</h2>
+      <p class="bolum__aciklama">Seyahatinizi tamamlayacak oteller</p>
+      <div class="oteller__grid">
+        <div class="oteller__kart">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
+            alt="otel-1"
+          />
+          <div class="oteller__kart__detaylar">
+            <h4>Lüks Otel - Paris</h4>
+          </div>
+        </div>
+        <div class="oteller__kart">
+          <img
+            src="img/paolo-nicolello-2gOxKj594nM-unsplash.jpg"
+            alt="otel-2"
+          />
+          <div class="oteller__kart__detaylar">
+            <h4>Resort - Bali</h4>
+          </div>
+        </div>
+        <div class="oteller__kart">
+          <img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop"
+            alt="otel-3"
+          />
+          <div class="oteller__kart__detaylar">
+            <h4>Şehir Oteli - New York</h4>
+          </div>
+        </div>
+        <div class="oteller__kart">
+          <img
+            src="img/victoriano-izquierdo-u0Tq1eDnaY4-unsplash.jpg"
+            alt="otel-4"
+          />
+          <div class="oteller__kart__detaylar">
+            <h4>Butik Otel - Tokyo</h4>
+          </div>
+        </div>
+        <div class="oteller__kart">
+          <img
+            src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2070&auto=format&fit=crop"
+            alt="otel-5"
+          />
+          <div class="oteller__kart__detaylar">
+            <h4>Villa - Santorini</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinasyonlar: Öne çıkan seyahat noktaları -->
+    <section class="bolum__kapsayici destinasyon__kapsayici" id="hakkimizda">
+      <h2 class="bolum__baslik">Popüler Destinasyonlar</h2>
+      <p class="bolum__aciklama">Dünyanın en sevilen yerlerini keşfet</p>
+      <div class="destinasyon__grid">
+        <div class="destinasyon__kart">
+          <img src="img/destination-1.jpg" alt="new-york" />
+          <div class="destinasyon__kart__detaylar">
+            <div>
+              <h4>Gelenek ve Modernlik</h4>
+              <p>New York, ABD</p>
+            </div>
+            <div class="destinasyon__puan">
+              <span><i class="ri-star-fill"></i></span> 4.7
+            </div>
+          </div>
+        </div>
+        <div class="destinasyon__kart">
+          <img src="img/destination-2.jpg" alt="paris" />
+          <div class="destinasyon__kart__detaylar">
+            <div>
+              <h4>Işıklar Şehri</h4>
+              <p>Paris, Fransa</p>
+            </div>
+            <div class="destinasyon__puan">
+              <span><i class="ri-star-fill"></i></span> 4.5
+            </div>
+          </div>
+        </div>
+        <div class="destinasyon__kart">
+          <img src="img/destination-3.jpg" alt="bali" />
+          <div class="destinasyon__kart__detaylar">
+            <div>
+              <h4>Tanrıların Adası</h4>
+              <p>Bali, Endonezya</p>
+            </div>
+            <div class="destinasyon__puan">
+              <span><i class="ri-star-fill"></i></span> 4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seyahat: Hizmetleri tanıtan bölüm -->
+    <section class="bolum__kapsayici seyahat__kapsayici" id="turlar">
+      <h2 class="bolum__baslik">Gökyüzüne Yolculuk Kolaylaştı!</h2>
+      <p class="bolum__aciklama">Bir sonraki maceran için zahmetsiz planlama</p>
+      <div class="seyahat__grid">
+        <div class="seyahat__kart">
+          <div class="seyahat__kart__arka">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Kusursuz Rezervasyon</h4>
+          </div>
+          <div class="seyahat__kart__icerik">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Tek Tıkla Rezervasyon</h4>
+            <p>
+              Uçuşlar, konaklama, aktiviteler ve transferler... Her şey
+              parmaklarının ucunda!
+            </p>
+          </div>
+        </div>
+        <div class="seyahat__kart">
+          <div class="seyahat__kart__arka">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Kişiye Özel Rotalar</h4>
+          </div>
+          <div class="seyahat__kart__icerik">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Sana Özel Planlar</h4>
+            <p>
+              Macera mı, kültür mü? İlgine göre tasarlanmış rotalarla yolculuğun
+              eşsiz olsun.
+            </p>
+          </div>
+        </div>
+        <div class="seyahat__kart">
+          <div class="seyahat__kart__arka">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Yerel Uzman Önerileri</h4>
+          </div>
+          <div class="seyahat__kart__icerik">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>İçeriden Tavsiyeler</h4>
+            <p>
+              Yemek, gezi ve gizli kalmış yerler için önerilerle destinasyonu
+              yerel gibi yaşa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vitrin: Markayı ve hizmetleri öne çıkarır -->
+    <section class="bolum__kapsayici vitrin__kapsayici" id="paketler">
+      <div class="vitrin__resim">
+        <img src="img/jingxi-lau-1GJ4OPdAUzk-unsplash.jpg" alt="vitrin" />
+      </div>
+      <div class="vitrin__icerik">
+        <h4>SKYVIBE İLE MACERAYA ATIL</h4>
+        <p>
+          SkyVibe ile seyahat hayallerin gerçeğe dönüşsün. Canlı şehirlerin
+          enerjisi, sakin plajların huzuru ya da tarihi yerlerin büyüsü... Sana
+          özel rotalar ve önerilerle her anı unutulmaz kılalım.
+        </p>
+        <p>
+          Planlamadan dönüşüne kadar yanında olan SkyVibe ile dünyayı keşfetmek
+          artık çok kolay. Yerel ipuçlarımızla her destinasyonda kendine güvenle
+          gez.
+        </p>
+        <button class="dugme">Hemen Uçuş Rezerve Et</button>
+      </div>
+    </section>
+
+    <!-- Banner: Başarı istatistikleri -->
+    <section class="bolum__kapsayici banner__kapsayici">
+      <div class="banner__kart">
+        <h4>10+</h4>
+        <p>Yıl Deneyim</p>
+      </div>
+      <div class="banner__kart">
+        <h4>12K</h4>
+        <p>Mutlu Müşteri</p>
+      </div>
+      <div class="banner__kart">
+        <h4>4.8</h4>
+        <p>Genel Puan</p>
+      </div>
+    </section>
+
+    <!-- Keşfet: Seyahat deneyimlerini tanıtır -->
+    <section class="bolum__kapsayici kesfet__kapsayici">
+      <h2 class="bolum__baslik">Dünyayı Yukarıdan Keşfet</h2>
+      <p class="bolum__aciklama">
+        Nefes kesen manzaralar ve eşsiz bakış açıları
+      </p>
+      <div class="kesfet__grid">
+        <div class="kesfet__kart">
+          <span><i class="ri-camera-lens-line"></i></span>
+          <h4>Şehir Manzaraları</h4>
+          <p>
+            Mimari harikaları ve canlı sokakları kuşbakışı gör, farklı bir
+            deneyim yaşa.
+          </p>
+        </div>
+        <div class="kesfet__kart">
+          <span><i class="ri-ship-line"></i></span>
+          <h4>Sahil Harikaları</h4>
+          <p>
+            Tertemiz sahiller ve turkuaz sular üzerinde uç, gizli koyları
+            keşfet.
+          </p>
+        </div>
+        <div class="kesfet__kart">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Tarihi Yerler</h4>
+          <p>
+            Antik kaleler ve önemli yerleri yerden göremeyeceğin bir şekilde
+            deneyimle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Müşteri: Kullanıcı yorumları -->
+    <section class="bolum__kapsayici musteri__kapsayici">
+      <h2 class="bolum__baslik">Binlerce Gezgin Tarafından Sevildi</h2>
+      <p class="bolum__aciklama">
+        Değerli müşterilerimizin macera ve anı hikayelerini keşfet
+      </p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="musteri__kart">
+              <div class="musteri__icerik">
+                <div class="musteri__puan">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  SkyVibe seyahat deneyimimi tamamen değiştirdi. Gizli
+                  güzelliklerden sakin inzivalara, her şey mükemmel
+                  planlanmıştı. Herkese öneririm!
+                </p>
+              </div>
+              <div class="musteri__detaylar">
+                <img src="img/client-1.jpg" alt="musteri" />
+                <div>
+                  <h4>Ali Yılmaz</h4>
+                  <h5>Seyahat Yazarı</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="musteri__kart">
+              <div class="musteri__icerik">
+                <div class="musteri__puan">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  SkyVibe ile yaptığım son macera muhteşemdi. Kişiselleştirilmiş
+                  rotalar ve önerilerle asla bulamayacağım yerleri keşfettim.
+                </p>
+              </div>
+              <div class="musteri__detaylar">
+                <img src="img/client-2.jpg" alt="musteri" />
+                <div>
+                  <h4>Ayşe Demir</h4>
+                  <h5>Macera Tutkunu</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="musteri__kart">
+              <div class="musteri__icerik">
+                <div class="musteri__puan">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Tarihi yerler üzerine araştırmalarım için SkyVibe eşsiz bir
+                  deneyim sundu. Havadan bakış açısı harikaydı!
+                </p>
+              </div>
+              <div class="musteri__detaylar">
+                <img src="img/client-3.jpg" alt="musteri" />
+                <div>
+                  <h4>Mehmet Kaya</h4>
+                  <h5>Kültürel Tarihçi</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="musteri__kart">
+              <div class="musteri__icerik">
+                <div class="musteri__puan">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  İş ve seyahat arasında denge kurmak zor, ama SkyVibe bunu
+                  kolaylaştırdı. Harika bir deneyim!
+                </p>
+              </div>
+              <div class="musteri__detaylar">
+                <img src="img/client-4.jpg" alt="musteri" />
+                <div>
+                  <h4>Emre Şahin</h4>
+                  <h5>İş İnsanı</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Altbilgi: İletişim, bağlantılar ve abonelik -->
+    <footer class="altbilgi" id="iletisim">
+      <div class="bolum__kapsayici altbilgi__kapsayici">
+        <div class="altbilgi__col">
+          <div class="altbilgi__logo">
+            <a href="#" class="logo">SkyVibe</a>
+          </div>
+          <p>
+            Kapsamlı platformumuzla dünyayı kolayca ve heyecanla keşfet. Maceran
+            burada başlıyor!
+          </p>
+          <ul class="altbilgi__sosyaller">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="altbilgi__col">
+          <h4>Hızlı Bağlantılar</h4>
+          <ul class="altbilgi__baglantilar">
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Uçuşlar</a></li>
+            <li><a href="#">Oteller</a></li>
+            <li><a href="#">Gemi Turları</a></li>
+          </ul>
+        </div>
+        <div class="altbilgi__col">
+          <h4>Bize Ulaşın</h4>
+          <ul class="altbilgi__baglantilar">
+            <li>
+              <a href="#"
+                ><span><i class="ri-phone-fill"></i></span> +90 123 456 7890</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-record-mail-line"></i></span>
+                info@skyvibe.com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="ri-map-pin-2-fill"></i></span> İstanbul,
+                Türkiye</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="altbilgi__col">
+          <h4>Abone Ol</h4>
+          <form action="/">
+            <input type="email" placeholder="E-posta adresiniz" required />
+            <button class="dugme">Abone Ol</button>
+          </form>
+        </div>
+      </div>
+      <div class="altbilgi__bar">
+        Copyright © 2025 SkyVibe. Tüm hakları saklıdır.
+      </div>
+    </footer>
+
+    <!-- Harici kütüphaneler -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Menü açma/kapama
+      const menuDugme = document.getElementById("menu-dugme");
+      const navBaglanti = document.getElementById("nav-baglanti");
+      const menuDugmeIkon = menuDugme.querySelector("i");
+
+      menuDugme.addEventListener("click", () => {
+        navBaglanti.classList.toggle("acik");
+        const acikMi = navBaglanti.classList.contains("acik");
+        menuDugmeIkon.setAttribute(
+          "class",
+          acikMi ? "ri-close-line" : "ri-menu-line"
+        );
+      });
+
+      navBaglanti.addEventListener("click", () => {
+        navBaglanti.classList.remove("acik");
+        menuDugmeIkon.setAttribute("class", "ri-menu-line");
+      });
+
+      // ScrollReveal animasyonları
+      const scrollRevealAyar = {
+        distance: "60px",
+        duration: 1200,
+        easing: "cubic-bezier(0.5, 0, 0, 1)",
+      };
+
+      ScrollReveal().reveal(".baslik__icerik p", {
+        ...scrollRevealAyar,
+        delay: 300,
+      });
+      ScrollReveal().reveal(".baslik__icerik h1", {
+        ...scrollRevealAyar,
+        delay: 600,
+      });
+      ScrollReveal().reveal(".baslik__dugmeler", {
+        ...scrollRevealAyar,
+        delay: 900,
+      });
+      ScrollReveal().reveal(".baslik__resim img", {
+        ...scrollRevealAyar,
+        origin: "right",
+        delay: 1200,
+      });
+      ScrollReveal().reveal(".ucak__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".oteller__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".destinasyon__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".seyahat__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".vitrin__resim img", {
+        ...scrollRevealAyar,
+        origin: "left",
+        delay: 300,
+      });
+      ScrollReveal().reveal(".vitrin__icerik h4", {
+        ...scrollRevealAyar,
+        delay: 600,
+      });
+      ScrollReveal().reveal(".vitrin__icerik p", {
+        ...scrollRevealAyar,
+        delay: 900,
+      });
+      ScrollReveal().reveal(".banner__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".kesfet__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+      ScrollReveal().reveal(".musteri__kart", {
+        ...scrollRevealAyar,
+        interval: 400,
+      });
+
+      // Swiper: Müşteri yorumları için slider
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1200: { slidesPerView: 3 },
+        },
+      });
+    </script>
+  </body>
+</html>
