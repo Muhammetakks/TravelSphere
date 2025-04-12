@@ -1,4 +1,4 @@
-# 🌍 Gezi Uygulaması Web Sitesi
+# 🌍 TravelSphere
 
 Bu proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiş modern ve kullanıcı dostu bir gezi uygulaması web sitesidir. Ziyaretçiler bu site üzerinden seyahat planları yapabilir, otel rezervasyonu oluşturabilir, uçak veya otobüs bileti satın alabilir ve konaklama seçeneklerini inceleyebilir. Tasarımı sade, şık ve mobil uyumludur.
 
@@ -48,4 +48,4 @@ Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları i
 
 1. Repoyu klonlayın:
    ```bash
-   git clone https://github.com/kullaniciadi/gezi-uygulamasi.git
+   git clone https://github.com/kullaniciadi/travelsphere.git
